@@ -1,7 +1,7 @@
 FROM ubuntu:focal
 
-RUN sudo apt-get -y -qq update
+RUN apt-get -y -qq update
 
-RUN sudo apt-get install python3-pip python3-dev build-essential
+RUN apt-get -y install python3-pip python3-dev build-essential python3-setuptools
 
-RUN sudo pip3 install awsebcli
+RUN pip3 install awsebcli
